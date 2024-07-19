@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.body {
+    font-family: 'Roboto', sans-serif; /* Cambiar la fuente a Roboto en negrita */
+    background: linear-gradient(to bottom,rgb(255, 255, 255), #639ef6 ); /* Fondo degradado vertical de gris a azul claro */
+    /* background-color: #d3dbd9;
+    padding-top: 56px; /* Para el navbar fijo */
+    color: #000; /* Texto negro para mejor contraste */
+}
+
+.container{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* Estilos para la barra de navegación */
+#navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    background-color: #a4bdbc; /* Fondo claro y semi-transparente */
+}
+
+#footer {
+    background-color: #ffbf91;
+}
+/* Estilos para el carrusel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Estilos para la sección de perfil */
+#profile-card {
+    border: 5px solid #a4bdbc; /* Borde más grueso y difuminado */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(58, 150, 225, 0.2), 
+                0 0 20px rgba(58, 150, 22, 0.4), 
+                0 0 30px rgba(153, 139, 235, 0.4); /* Sombra difuminada */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 20px; /* Separación entre las tarjetas */
+    text-align:left;
+}
+
+#profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 
+                0 0 40px rgba(0, 0, 0, 0.2), 
+                0 0 60px rgba(0, 0, 0, 0.2); /* Sombra difuminada más fuerte al pasar el ratón */
+}
+
+.profile-card .card-img-top {
+    height: 450px;
+    object-fit: cover;
+}
+
+#profile-card {
+    background-color: rgba(255, 255, 255, 0.685); /* Fondo claro y semi-transparente */
+}
+
+.card-text {
+    font-size: 18px;
+    color: #170d63; /* Texto negro */
+    font-weight: bold; /* Texto en negrita */
+}
+
+@media (min-width: 768px) {
+    .row.justify-content-center {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .profile-card {
+        height: 100%;
+    }
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo claro y semi-transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+}
+
+/* Estilos generales para las secciones */
+section {
+    padding: 60px 0;
+}
+
+h2, h5 {
+    color: #000; /* Texto negro */
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto en negrita */
+    margin-bottom: 30px;
+}
+
+/* Estilos para los botones */
+
+
+.btn-primary:hover {
+    background-color: #FC9D0D;
+    border-color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.profile-card, .contact-form {
+    animation: fadeIn 1s ease-out;
+}

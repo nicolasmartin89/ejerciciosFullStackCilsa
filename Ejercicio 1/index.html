@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formulario de Datos Personales</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="personalForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <span id="nombre-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido">
+                    <span id="apellido-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                    <span id="fechaNacimiento-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="paisResidencia">País de Residencia</label>
+                    <select id="paisResidencia" name="paisResidencia">
+                        <option value="">Seleccione un país</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+                    <span id="paisResidencia-error" class="error-message"></span>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="form-container">
+                <button id="highContrastBtn">Estilo de Alto Contraste</button>
+                <button id="style1Btn">Estilo 1</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

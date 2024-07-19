@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Perfil</title>
+    <!-- Enlaces a Bootstrap CSS y JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav id=navbar class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-water"></i>Sobre Nosotros</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perfil">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio con Carrusel -->
+    <section id="inicio" class="container-fluid p-0">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/resources/desert-4933581_1920.jpg" class="d-block w-100" alt="Proyecto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/resources/landscape-1192669_1920.jpg" class="d-block w-100" alt="Proyecto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/resources/morning-4411421_1920.jpg" class="d-block w-100" alt="Proyecto 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección de Perfil con Tarjeta -->
+    <div id="perfil" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div id=profile-card class="card">
+                    <img src="/resources/Patricia.jpg" class="card-img-top" alt="Imagen de Ejemplo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Patricia Caicedo</h5>
+                        <p class="card-text">Diseñadora industrial en evolución hacia el mundo digital. Dando mis
+                            primeros pasos en el desarrollo web pensando en sitios accesibles y funcionales. Cada línea
+                            de código es un paso hacia mi crecimiento integral y un pequeño aporte a la sociedad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id=profile-card class="card">
+                    <img src="/resources/Nicolas.jpeg" class="card-img-top" alt="Imagen de Ejemplo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nicolas Martin</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ab fuga
+                            eaque nesciunt sapiente quod eum, ex soluta non deserunt, minus porro nulla ut architecto,
+                            quo corrupti ducimus impedit magni!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sección de Contacto con Formulario -->
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="contactForm" class="contact-form">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-dark" href="#Inicio">Programa de Desarrollo Fullstack CILSA</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+    <!-- Tu archivo JavaScript personalizado -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
